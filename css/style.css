@@ -1,6 +1,6 @@
  *{
-    padding: 0;
-    margin: 0;
+    
+    
     box-sizing: border-box;
  }
  body{
@@ -195,4 +195,8 @@ border-radius: 20px;
  }
  
 
- 
+ html,body{
+   margin: 0;
+   width: 100;
+   overflow-x: hidden;
+ }
