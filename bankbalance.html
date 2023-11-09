@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Balance</title>
+</head>
+<style>
+     .body{
+        display: flex;
+        align-content: center;
+        align-items: center; 
+        
+        
+        
+    }
+    .condainer{
+        width: 400px;
+        height: 150px;
+        padding-bottom: 50px;
+        background-color:rgb(240, 240, 248);
+        margin-left: 50px;
+        padding-top: 10px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        border :solid 2px ;   
+
+    }
+</style>
+<body>
+    <div class="condainer">
+    <h2>Bank Balance</h2>
+    <input type="number" id="depositAmount" placeholder="Deposit  Amount" >
+    <button onclick="deposit()">Deposit</button>
+    <br><br>
+    <input type="number" id="withdrawAmount" placeholder="Withdraw  Amount">
+    <button onclick="withdraw()">Withdraw</button><br><br>
+    <button onclick="showBalace()">Show Balance</button>
+    <p id="show"></p>
+    </div>
+    
+</body>
+<script>
+    let balance=0;
+    function updateBlance(){
+        document.getElementById("balance").textContent=balance;
+    }
+  function deposit(){
+    const depositAmount=parseFloat(document.getElementById("depositAmount").value);
+    if(depositAmount>0){
+        balance = balance + depositAmount;
+        updateBlance();
+    } 
+}
+    function withdraw(){
+        const withdrawAmount = parseFloat(document.getElementById("withdrawAmount").value);
+        if(withdrawAmount > 0 && withdrawAmount <= balance){
+            balance = balance - withdrawAmount;
+            updateBlance();
+        }
+    }
+
+    function showBalace(){
+         document.getElementById("show").innerHTML="Current Balance is : "+(balance)+" Rupees only";
+    }
+</script>
+</html> 
