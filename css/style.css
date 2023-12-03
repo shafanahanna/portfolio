@@ -1,5 +1,4 @@
- *{
-    
+ *{ 
     
     box-sizing: border-box;
  }
@@ -30,7 +29,7 @@
     cursor: pointer;
     text-decoration: none;
  }
- .main{
+  .main{
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -44,21 +43,6 @@
    justify-items: center;
    height: 500px;
  }
-
-  
- 
- .main h3{
-    font-size: 32px;
-    font-weight: 700;
-    color: rgb(35, 5, 96);
- }
- .main h6{
-    font-size: 1.2rem;
-    line-height: 1;
-    
-    
- }
- 
 
   
  .btnbox a{
@@ -107,7 +91,7 @@ border-radius: 20px;
     display: flex;
     align-content: center;
     height: 35%;
-    width:100%;
+    width: 100%;
  }
  .pro-value1{
     animation: load1 3s normal forwards;
@@ -158,21 +142,6 @@ border-radius: 20px;
         width: 50%;
     }
  }
- /* .btn{
-    height: 40px;
-    width: 145px;
-    outline: none;
-    border: 1px solid black;
-    
-    color: black;
-    border-radius: 4px;
-
- }
- .btn:hover{
-    background-color:lightblue;
-    color: white;
-    border: none;
-    transition: 0.5s; */
  
  .card{
    border-bottom: 5px solid yellow;
@@ -192,11 +161,11 @@ border-radius: 20px;
    margin-left: 1rem;
    border: 2px solid rgb(136, 136, 3);
    border-radius: 0.5rem;
- }
+ } 
  
 
  html,body{
    margin: 0;
-   width: 100;
+   width: 100%;
    overflow-x: hidden;
  }
